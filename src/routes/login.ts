@@ -14,6 +14,20 @@ const jwt = new Jwt();
 
 const router: Router = Router();
 
+
+router.get('/gentoken',async(req: Request,res: Response) => {
+  let today = new Date();
+  let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  let dateTime = date+time;
+  let token = crypto
+    .createHash('md5')
+    .update(dateTime)
+    .digest('hex');
+    
+    res.send(token);
+ })
+
 router.post('/', async (req: Request, res: Response) => {
   let db = req.db;
   let username: string = req.body.username;
