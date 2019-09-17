@@ -39,7 +39,7 @@ import activityRoute from './routes/activity-routes';
 import unitRoute from './routes/unit-routes';
 import notifyRoute from './routes/notify-routes';
 import officeRoute from './routes/office-routes';
-import uploadsRoute from './routes/uploads-routes';
+//import uploadsRoute from './routes/uploads-routes';
 //import indexRoute from './routes/index';
 import loginRoute from './routes/login';
 import reportRoute from './routes/report-routes';
