@@ -43,7 +43,7 @@ import officeRoute from './routes/office-routes';
 //import indexRoute from './routes/index';
 import loginRoute from './routes/login';
 import reportRoute from './routes/report-routes';
-
+import personRoute from './routes/person-routes';
 //import requestRoute from './routes/request';
 //import departmentRoute from './routes/departments';
 //import categoryRoute from './routes/categories';
@@ -224,6 +224,7 @@ app.use('/report',reportRoute);
 
 // for user/IT
 app.use('/service', serviceRoute);
+app.use('/person',personRoute);
 //app.use('/request', checkAuth, checkStaff, requestRoute);
 
 // public
