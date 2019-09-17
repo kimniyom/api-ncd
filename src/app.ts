@@ -216,7 +216,7 @@ app.use('/activity',activityRoute);
 app.use('/unit',unitRoute);
 app.use('/notify',notifyRoute);
 app.use('/office',officeRoute);
-app.use('/uploads',uploadsRoute);
+//app.use('/uploads',uploadsRoute);
 app.use('/report',reportRoute);
 //app.use('/login', loginRoute);
 
