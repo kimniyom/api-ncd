@@ -31,8 +31,8 @@ router.get('/', async (req: Request, res: Response) => {
   let db = req.db;
 
   try {
-    let rows = await ncdModel.getList(db);
-    res.send({ rows: rows });
+    //let rows = await ncdModel.getList(db);
+    res.send({ rows: true });
   } catch (error) {
     console.log(error);
     res.send({ ok: false, error: error.message });
@@ -44,8 +44,7 @@ router.get('/', async (req: Request, res: Response) => {
 // save
 router.post('/', async (req: Request, res: Response) => {
     let db = req.db;
-    //let userName = req.body.username;
-    console.log(req.body);
+    let data = req.body;
     try {
       let data: any = req.body;
     

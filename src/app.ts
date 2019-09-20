@@ -44,6 +44,7 @@ import officeRoute from './routes/office-routes';
 import loginRoute from './routes/login';
 import reportRoute from './routes/report-routes';
 import personRoute from './routes/person-routes';
+import ncdRoute from './routes/ncd-routes';
 //import requestRoute from './routes/request';
 //import departmentRoute from './routes/departments';
 //import categoryRoute from './routes/categories';
@@ -225,6 +226,7 @@ app.use('/report',reportRoute);
 // for user/IT
 app.use('/service', serviceRoute);
 app.use('/person',personRoute);
+app.use('/ncd',ncdRoute);
 //app.use('/request', checkAuth, checkStaff, requestRoute);
 
 // public
