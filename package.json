@@ -25,7 +25,7 @@
     "mysql": "^2.15.0",
     "request": "^2.88.0",
     "serve-favicon": "^2.5.0",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.4.0",
     "table": "^5.4.5"
   },
   "devDependencies": {
